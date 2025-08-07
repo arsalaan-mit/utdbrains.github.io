@@ -276,7 +276,7 @@ h6 {
   height: 100vh;
   background: url("../img/logo/utdbrains.jpeg") no-repeat;
   background-size: contain;
-  background-position: center right;
+  background-position: center center;
   position: relative;
 }
 
