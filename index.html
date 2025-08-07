@@ -140,301 +140,124 @@
           </p>
         </div>
         <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="200">
-          <a href="#" id="apply-btn" class="btn btn-lg" style="background-color: #F17F29; color: #fff; border-radius: 30px; padding: 12px 36px; font-weight: 600;">Apply</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTUtzmRClyGJev3pHnSr0QkX_Beom1gAjMomw5bWUs1K87AA/viewform?pli=1" id="apply-btn" class="btn btn-lg" style="background-color: #F17F29; color: #fff; border-radius: 30px; padding: 12px 36px; font-weight: 600;">Apply</a>
         </div>
       </div>
     </section>
 
     <!-- End Applications Section -->
 
-    <!--
-    <!-- ======= Portfolio Section ======= -->
-    <section id="people" class="portfolio section-bg">
-      <div class="container max-w-screen-lg" data-aos="fade-up">
-        <div class="section-title">
-          <h2>People</h2>
-          <p>
-            Our research group brings together talented students and researchers
-            to push the boundaries of artificial intelligence and machine learning,
-            spanning multiple disciplines. We maintain close collaborations with
-            faculty advisors and industry partners who oversee our work. Our members
-            go on to accomplish great things across academia and industry.
-          </p>
-        </div>
+    
+<!-- ======= Portfolio Section ======= -->
+<section id="people" class="portfolio section-bg">
+  <div class="container max-w-screen-lg" data-aos="fade-up">
+    <div class="section-title">
+      <h2>People</h2>
+      <p>
+        Our research group brings together talented students and researchers
+        to push the boundaries of artificial intelligence and machine learning,
+        spanning multiple disciplines. We maintain close collaborations with
+        faculty advisors and industry partners who oversee our work. Our members
+        go on to accomplish great things across academia and industry.
+      </p>
+    </div>
 
-        <div class="row">
-          <div class="col-lg-12 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-filters">
-              <li data-filter=".filter-current-member" class="filter-active">
-                Current Members
-              </li>
-              <li data-filter=".filter-research-advisor">
-                Research Advisors
-              </li>
-              <li data-filter=".filter-alumni">Alumni</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container max-w-screen-xl m-auto" data-aos="fade-up" data-aos-delay="200">
-          <!-- Current Members -->
-          <script>
-            document.addEventListener("DOMContentLoaded", (event) => {
-              const members = [
-                {
-                  name: "Owen Oertell",
-                  role: "Co-President",
-                  link: "https://owenoertell.com/",
-                  img: "assets/img/people/owen.jpg",
-                  filter: "filter-current-member",
-                },
-                {
-                  name: "Žiga Kovačič",
-                  role: "Co-President",
-                  link: "https://zzigak.github.io/",
-                  img: "assets/img/people/ziga.png",
-                  filter: "filter-current-member",
-                },
-                {
-                  name: "Sidhanth Holalkere",
-                  role: "Microsoft Research Intern",
-                  link: "https://sholalkere.github.io/",
-                  img: "assets/img/people/sid.jpg",
-                  filter: "filter-alumni",
-                },
-                {
-                  name: "Juntao Ren",
-                  role: "Member",
-                  link: "https://jren03.github.io/",
-                  img: "assets/img/people/juntao.jpg",
-                  filter: "filter-current-member",
-                },
-                {
-                  name: "Eric Chen",
-                  role: "MIT CS PhD",
-                  link: "https://echen01.github.io/",
-                  img: "assets/img/people/eric.jpg",
-                  filter: "filter-alumni",
-                },
-                {
-                  name: "Zilu Li",
-                  role: "UCSD CS PhD",
-                  link: "https://zilulii.github.io",
-                  img: "assets/img/people/zilu.jpg",
-                  filter: "filter-alumni",
-                },
-                {
-                  name: "Fengyu Li",
-                  role: "Stanford CS MS",
-                  link: "https://fengyuli.dev/",
-                  img: "assets/img/people/fengyu.jpeg",
-                  filter: "filter-alumni",
-                },
-                {
-                  name: "Zichen Wang",
-                  role: "UMich CS PhD",
-                  link:
-                    "https://scholar.google.com/citations?user=6W_ACEEAAAAJ&hl=en",
-                  img: "assets/img/people/zichen.jpg",
-                  filter: "filter-alumni",
-                },
-                {
-                  name: "Yijia Dai",
-                  role: "Member",
-                  link: "https://www.linkedin.com/in/yijia-dai-7b76b01b9/",
-                  img: "assets/img/people/yijia.jpg",
-                  filter: "filter-current-member",
-                },
-                {
-                  name: "Yolanda Wang",
-                  role: "Stanford CS MS",
-                  link: "https://www.linkedin.com/in/yufan--wang/",
-                  img: "assets/img/people/yolanda.jpg",
-                  filter: "filter-alumni",
-                },
-                {
-                  name: "Vivian Chen",
-                  role: "Member",
-                  link: "https://www.linkedin.com/in/vivian-chen-b6a178254/",
-                  img: "assets/img/people/vivian.jpg",
-                  filter: "filter-current-member",
-                },
-                {
-                  name: "Tyler King",
-                  role: "Member",
-                  link: "https://tylertking.com/",
-                  img: "assets/img/people/tyler.jpg",
-                  filter: "filter-current-member",
-                },
-                
-                {
-                  name: "Michael Ngo",
-                  role: "Member",
-                  link: "https://www.linkedin.com/in/mic-ngo/",
-                  img: "assets/img/people/michael.jpg",
-                  filter: "filter-current-member",
-                },
-                {
-                  name: "Daniel Wang",
-                  role: "Member",
-                  link: "",
-                  img: "assets/img/people/daniel.png",
-                  filter: "filter-current-member",
-                },
-                {
-                  name: "Bradley Guo",
-                  role: "Member",
-                  link: "https://www.linkedin.com/in/bradley-guo-373643247/",
-                  img: "assets/img/people/bradley.jpg",
-                  filter: "filter-current-member",
-                },
-                {
-                  name: "Zubin Bhaumik",
-                  role: "Member",
-                  link: "https://www.linkedin.com/in/zubin-bhaumik/",
-                  img: "assets/img/people/zubin.jpg",
-                  filter: "filter-current-member",
-                },
-                {
-                  name: "Carrie Chen",
-                  role: "Member",
-                  link: "https://www.linkedin.com/in/carrie-chen-077000255/",
-                  img: "assets/img/people/carrie.png",
-                  filter: "filter-current-member",
-                },
-                {
-                  name: "Kevin Chen",
-                  role: "Member",
-                  link: "",
-                  img: "assets/img/people/kevin.png",
-                  filter: "filter-current-member",
-                },
-                {
-                  name: "Ahan Mishra",
-                  role: "Member",
-                  link: "https://www.ahanmishra.com/",
-                  img: "assets/img/people/ahan.png",
-                  filter: "filter-current-member",
-                },
-                {
-                  name: "Evan Zhang",
-                  role: "Member",
-                  link: "https://www.linkedin.com/in/yiwen-zhang-b76138265/",
-                  img: "assets/img/people/evan.jpg",
-                  filter: "filter-current-member",
-                },
-                {
-                  name: "Prof. Ramin Zabih",
-                  role: "Affiliated Faculty",
-                  link: "https://www.cs.cornell.edu/rdz/",
-                  img: "assets/img/people/ramin.jpg",
-                  filter: "filter-research-advisor",
-                },
-                {
-                  name: "Prof. Serge Belongie",
-                  role: "Affiliated Faculty",
-                  link:
-                    "https://blogs.cornell.edu/techfaculty/serge-belongie/",
-                  img: "assets/img/people/serge.jpg",
-                  filter: "filter-research-advisor",
-                },
-                {
-                  name: "Prof. Chris de Sa",
-                  role: "Affiliated Faculty",
-                  link: "https://www.cs.cornell.edu/~cdesa/",
-                  img: "assets/img/people/chris.jpg",
-                  filter: "filter-research-advisor",
-                },
-                {
-                  name: "Prof. Wen Sun",
-                  role: "Affiliated Faculty",
-                  link: "https://wensun.github.io/",
-                  img: "assets/img/people/wen.png",
-                  filter: "filter-research-advisor",
-                },
-                {
-                  name: "Prof. Bharath Hariharan",
-                  role: "Affiliated Faculty",
-                  link: "https://www.cs.cornell.edu/~bharathh/",
-                  img: "assets/img/people/bharath.jpg",
-                  filter: "filter-research-advisor",
-                },
-                {
-                  name: "Prof. Kavita Bala",
-                  role: "Affiliated Faculty",
-                  link: "https://www.cs.cornell.edu/~kb/",
-                  img: "assets/img/people/kb.jpeg",
-                  filter: "filter-research-advisor",
-                },
-                {
-                  name: "Prof. Yoav Artzi",
-                  role: "Affiliated Faculty",
-                  link: "https://yoavartzi.com/",
-                  img: "assets/img/people/yoav.jpeg",
-                  filter: "filter-research-advisor",
-                },
-                {
-                  name: "Prof. Sanjiban Choudhury",
-                  role: "Affiliated Faculty",
-                  link: "https://www.sanjibanchoudhury.com/",
-                  img: "assets/img/people/sanjiban.jpeg",
-                  filter: "filter-research-advisor",
-                },
-                {
-                  name: "Prof. Ser-Nam Lim",
-                  role: "Affiliated Faculty",
-                  link: "https://sites.google.com/site/sernam",
-                  img: "assets/img/people/sernam.jpeg",
-                  filter: "filter-research-advisor",
-                },
-                {
-                  name: "Prof. Abe Davis",
-                  role: "Affiliated Faculty",
-                  link: "https://www.cs.cornell.edu/abe/group/",
-                  img: "assets/img/people/abe.png",
-                  filter: "filter-research-advisor",
-                },
-                {
-                  name: "Vaishnavi Gupta",
-                  role: "Graduate Research Advisor",
-                  link: "https://vaishnavigupta.com/",
-                  img: "assets/img/people/vaishnavi.jpg",
-                  filter: "filter-research-advisor",
-                },
-                {
-                  name: "Yuanqi Du",
-                  role: "Graduate Research Advisor",
-                  link: "https://yuanqidu.github.io/",
-                  img: "assets/img/people/yuanqi.jpeg",
-                  filter: "filter-research-advisor",
-                }
-              ];
-
-              let html = "";
-              members.forEach((member) => {
-                html += `
-                    <div class="col-lg-3 col-md-2 portfolio-item ${member.filter}">
-                      <div class="portfolio-wrap">
-                        <a href="${member.link}" target="_blank" rel="noopener noreferrer">
-                          <img src="${member.img}" class="img-fluid" />
-                          <div>
-                            <h5>${member.name}</h5>
-                            <h6>${member.role}</h6>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  `;
-              });
-
-              document.querySelector(".portfolio-container").innerHTML = html;
-            });
-          </script>
-        </div>
+    <div class="row">
+      <div class="col-lg-12 d-flex" data-aos="fade-up" data-aos-delay="100">
+        <ul id="portfolio-filters">
+          <li data-filter=".filter-current-member" class="filter-active">Current Members</li>
+          <li data-filter=".filter-research-advisor">Research Advisors</li>
+        </ul>
       </div>
-    </section>
-    <!-- End People Section -->
--->
+    </div>
+
+    <div class="row portfolio-container max-w-screen-xl m-auto" data-aos="fade-up" data-aos-delay="200">
+      <!-- Members will be dynamically added here -->
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const members = [
+        { name: "Owen Oertell", role: "Co-President", link: "https://owenoertell.com/", img: "assets/img/people/owen.jpg", filter: "filter-current-member" },
+        { name: "Žiga Kovačič", role: "Co-President", link: "https://zzigak.github.io/", img: "assets/img/people/ziga.png", filter: "filter-current-member" },
+        { name: "Juntao Ren", role: "Member", link: "https://jren03.github.io/", img: "assets/img/people/juntao.jpg", filter: "filter-current-member" },
+        { name: "Yijia Dai", role: "Member", link: "https://www.linkedin.com/in/yijia-dai-7b76b01b9/", img: "assets/img/people/yijia.jpg", filter: "filter-current-member" },
+        { name: "Vivian Chen", role: "Member", link: "https://www.linkedin.com/in/vivian-chen-b6a178254/", img: "assets/img/people/vivian.jpg", filter: "filter-current-member" },
+        { name: "Tyler King", role: "Member", link: "https://tylertking.com/", img: "assets/img/people/tyler.jpg", filter: "filter-current-member" },
+        { name: "Michael Ngo", role: "Member", link: "https://www.linkedin.com/in/mic-ngo/", img: "assets/img/people/michael.jpg", filter: "filter-current-member" },
+        { name: "Daniel Wang", role: "Member", link: "", img: "assets/img/people/daniel.png", filter: "filter-current-member" },
+        { name: "Bradley Guo", role: "Member", link: "https://www.linkedin.com/in/bradley-guo-373643247/", img: "assets/img/people/bradley.jpg", filter: "filter-current-member" },
+        { name: "Zubin Bhaumik", role: "Member", link: "https://www.linkedin.com/in/zubin-bhaumik/", img: "assets/img/people/zubin.jpg", filter: "filter-current-member" },
+        { name: "Carrie Chen", role: "Member", link: "https://www.linkedin.com/in/carrie-chen-077000255/", img: "assets/img/people/carrie.png", filter: "filter-current-member" },
+        { name: "Kevin Chen", role: "Member", link: "", img: "assets/img/people/kevin.png", filter: "filter-current-member" },
+        { name: "Ahan Mishra", role: "Member", link: "https://www.ahanmishra.com/", img: "assets/img/people/ahan.png", filter: "filter-current-member" },
+        { name: "Evan Zhang", role: "Member", link: "https://www.linkedin.com/in/yiwen-zhang-b76138265/", img: "assets/img/people/evan.jpg", filter: "filter-current-member" },
+        { name: "Prof. Ramin Zabih", role: "Affiliated Faculty", link: "https://www.cs.cornell.edu/rdz/", img: "assets/img/people/ramin.jpg", filter: "filter-research-advisor" },
+        { name: "Prof. Serge Belongie", role: "Affiliated Faculty", link: "https://blogs.cornell.edu/techfaculty/serge-belongie/", img: "assets/img/people/serge.jpg", filter: "filter-research-advisor" },
+        { name: "Prof. Chris de Sa", role: "Affiliated Faculty", link: "https://www.cs.cornell.edu/~cdesa/", img: "assets/img/people/chris.jpg", filter: "filter-research-advisor" },
+        { name: "Prof. Wen Sun", role: "Affiliated Faculty", link: "https://wensun.github.io/", img: "assets/img/people/wen.png", filter: "filter-research-advisor" },
+        { name: "Prof. Bharath Hariharan", role: "Affiliated Faculty", link: "https://www.cs.cornell.edu/~bharathh/", img: "assets/img/people/bharath.jpg", filter: "filter-research-advisor" },
+        { name: "Prof. Kavita Bala", role: "Affiliated Faculty", link: "https://www.cs.cornell.edu/~kb/", img: "assets/img/people/kb.jpeg", filter: "filter-research-advisor" },
+        { name: "Prof. Yoav Artzi", role: "Affiliated Faculty", link: "https://yoavartzi.com/", img: "assets/img/people/yoav.jpeg", filter: "filter-research-advisor" },
+        { name: "Prof. Sanjiban Choudhury", role: "Affiliated Faculty", link: "https://www.sanjibanchoudhury.com/", img: "assets/img/people/sanjiban.jpeg", filter: "filter-research-advisor" },
+        { name: "Prof. Ser-Nam Lim", role: "Affiliated Faculty", link: "https://sites.google.com/site/sernam", img: "assets/img/people/sernam.jpeg", filter: "filter-research-advisor" },
+        { name: "Prof. Abe Davis", role: "Affiliated Faculty", link: "https://www.cs.cornell.edu/abe/group/", img: "assets/img/people/abe.png", filter: "filter-research-advisor" },
+        { name: "Vaishnavi Gupta", role: "Graduate Research Advisor", link: "https://vaishnavigupta.com/", img: "assets/img/people/vaishnavi.jpg", filter: "filter-research-advisor" },
+        { name: "Yuanqi Du", role: "Graduate Research Advisor", link: "https://yuanqidu.github.io/", img: "assets/img/people/yuanqi.jpeg", filter: "filter-research-advisor" }
+      ];
+
+      const container = document.querySelector(".portfolio-container");
+
+      function renderMembers() {
+        let html = "";
+        members.forEach((member) => {
+          html += `
+            <div class="col-lg-3 col-md-2 portfolio-item ${member.filter}">
+              <div class="portfolio-wrap">
+                <a href="${member.link}" target="_blank" rel="noopener noreferrer">
+                  <img src="${member.img}" class="img-fluid" />
+                  <div>
+                    <h5>${member.name}</h5>
+                    <h6>${member.role}</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+          `;
+        });
+        container.innerHTML = html;
+      }
+
+      renderMembers();
+
+      // Filter buttons
+      const filterButtons = document.querySelectorAll("#portfolio-filters li");
+
+      filterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const filter = btn.getAttribute("data-filter");
+          document.querySelectorAll("#portfolio-filters li").forEach(li => li.classList.remove("filter-active"));
+          btn.classList.add("filter-active");
+
+          document.querySelectorAll(".portfolio-item").forEach((item) => {
+            if (item.classList.contains(filter.replace(".", ""))) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+      });
+
+      // Show only current members by default
+      setTimeout(() => {
+        document.querySelector('[data-filter=".filter-current-member"]').click();
+      }, 50);
+    });
+  </script>
+</section>
+<!-- End People Section -->
 
   </main>
   <!-- End #main -->
