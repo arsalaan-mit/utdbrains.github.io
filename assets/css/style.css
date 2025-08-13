@@ -1,7 +1,7 @@
 /**
 * Template Name: UTD Brains - Custom Design
 * Updated: Custom design for UTD Brains AI/ML Research Group
-* Colors: UTD Orange (#F17F29), UTD Green (#006633), White (#FFFFFF)
+* Colors: UTD Orange (#F17F29), White (#FFFFFF), Dark Gray (#2C3E50)
 */
 
 /*--------------------------------------------------------------
@@ -10,13 +10,13 @@
 :root {
   --utd-orange: #F17F29;
   --utd-orange-dark: #d4651f;
-  --utd-green: #006633;
-  --utd-green-light: #007a3d;
+  --utd-orange-light: #ff9a4d;
   --utd-white: #FFFFFF;
   --utd-gray: #2C3E50;
   --utd-light-gray: #f8f9fa;
-  --utd-gradient: linear-gradient(135deg, var(--utd-orange) 0%, var(--utd-green) 100%);
-  --utd-gradient-light: linear-gradient(135deg, rgba(241, 127, 41, 0.1) 0%, rgba(0, 102, 51, 0.1) 100%);
+  --utd-dark-gray: #1a252f;
+  --utd-gradient: linear-gradient(135deg, var(--utd-orange) 0%, var(--utd-orange-dark) 100%);
+  --utd-gradient-light: linear-gradient(135deg, rgba(241, 127, 41, 0.1) 0%, rgba(241, 127, 41, 0.05) 100%);
 }
 
 /*--------------------------------------------------------------
@@ -36,7 +36,7 @@ a {
 }
 
 a:hover {
-  color: var(--utd-green);
+  color: var(--utd-orange-dark);
   text-decoration: none;
   transform: translateY(-1px);
 }
@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
   left: calc(50% - 30px);
   border: 4px solid var(--utd-light-gray);
   border-top: 4px solid var(--utd-orange);
-  border-right: 4px solid var(--utd-green);
+  border-right: 4px solid var(--utd-orange-dark);
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -160,6 +160,7 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(180deg, var(--utd-white) 0%, rgba(248, 249, 250, 0.95) 100%);
   backdrop-filter: blur(10px);
   border-right: 1px solid rgba(241, 127, 41, 0.1);
+  width: 100px;
 }
 
 @media (max-width: 991px) {
@@ -343,7 +344,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(135deg, rgba(241, 127, 41, 0.1) 0%, rgba(0, 102, 51, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(241, 127, 41, 0.1) 0%, rgba(241, 127, 41, 0.05) 100%);
   position: relative;
   display: flex;
   align-items: center;
@@ -512,7 +513,7 @@ section:nth-child(even) {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: var(--utd-green);
+  color: var(--utd-orange);
 }
 
 .about .content ul {
@@ -544,7 +545,7 @@ section:nth-child(even) {
 .about .content ul i {
   font-size: 16px;
   margin-right: 10px;
-  color: var(--utd-green);
+  color: var(--utd-orange);
   line-height: 0;
 }
 
@@ -638,6 +639,16 @@ section:nth-child(even) {
   text-align: center;
   border-radius: 15px;
   background: var(--utd-white);
+  display: block;
+}
+
+.portfolio .portfolio-item {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.portfolio .portfolio-item.hidden {
+  display: none;
 }
 
 .portfolio .portfolio-wrap:hover {
@@ -660,6 +671,8 @@ section:nth-child(even) {
   position: relative;
   color: var(--utd-gray);
   font-weight: 600;
+  background: var(--utd-white);
+  padding: 10px 0;
 }
 
 .portfolio h6 {
@@ -670,6 +683,8 @@ section:nth-child(even) {
   position: relative;
   color: var(--utd-orange);
   font-weight: 500;
+  background: var(--utd-white);
+  padding: 5px 0;
 }
 
 /*--------------------------------------------------------------
@@ -830,6 +845,13 @@ section:nth-child(even) {
   text-align: center;
   padding: 40px 0;
   position: relative;
+  margin-left: 0;
+}
+
+@media (min-width: 991px) {
+  #footer {
+    margin-left: 100px;
+  }
 }
 
 #footer::before {
@@ -966,24 +988,6 @@ section:nth-child(even) {
 
 .pulse {
   animation: pulse 2s infinite;
-}
-
-/*--------------------------------------------------------------
-# Responsive Design
---------------------------------------------------------------*/
-@media (max-width: 768px) {
-  .section-title h2 {
-    font-size: 2rem;
-  }
-  
-  #hero h1 {
-    font-size: 2rem;
-  }
-  
-  .portfolio #portfolio-filters li {
-    padding: 8px 15px;
-    font-size: 12px;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -1172,7 +1176,7 @@ section:nth-child(even) {
   content: '✓';
   position: absolute;
   left: 0;
-  color: var(--utd-green);
+  color: var(--utd-orange);
   font-weight: bold;
 }
 
@@ -1185,7 +1189,7 @@ section:nth-child(even) {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(241, 127, 41, 0.9) 0%, rgba(0, 102, 51, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(241, 127, 41, 0.9) 0%, rgba(212, 101, 31, 0.9) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
