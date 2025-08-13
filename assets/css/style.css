@@ -355,7 +355,7 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  left: 100px;
   right: 0;
   bottom: 0;
   background: url("../img/logo/utdbrains.jpeg") no-repeat center center;
@@ -382,11 +382,17 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2;
   color: var(--utd-gray);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#hero .hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--utd-gray);
   margin-bottom: 20px;
-  background: var(--utd-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
 }
 
 #hero p {
@@ -431,10 +437,18 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     text-align: center;
   }
+  
+  #hero::before {
+    left: 0;
+  }
 
   #hero h1 {
     font-size: 2.5rem;
     line-height: 1.2;
+  }
+  
+  #hero .hero-subtitle {
+    font-size: 1.2rem;
   }
 
   #hero p {
