@@ -600,6 +600,8 @@ section:nth-child(even) {
   border-radius: 25px;
   position: relative;
   overflow: hidden;
+  background: var(--utd-white);
+  border: 2px solid transparent;
 }
 
 .portfolio #portfolio-filters li::before {
@@ -617,6 +619,7 @@ section:nth-child(even) {
 .portfolio #portfolio-filters li:hover,
 .portfolio #portfolio-filters li.filter-active {
   color: var(--utd-white);
+  background: var(--utd-orange);
 }
 
 .portfolio #portfolio-filters li:hover::before,
@@ -1238,11 +1241,12 @@ section:nth-child(even) {
 }
 
 .sponsor-logo {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   object-fit: contain;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   border-radius: 10px;
+  display: block;
 }
 
 .sponsor-card h5 {
