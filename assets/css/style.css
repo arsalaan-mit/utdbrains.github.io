@@ -915,11 +915,13 @@ section:nth-child(even) {
 
 #footer .social-links a {
   font-size: 18px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: rgba(255, 255, 255, 0.1);
   color: var(--utd-white);
   line-height: 1;
-  padding: 10px 0;
+  padding: 0;
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
