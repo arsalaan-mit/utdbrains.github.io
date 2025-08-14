@@ -349,6 +349,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 #hero::before {
@@ -373,7 +374,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 992px) {
   #hero {
-    padding-left: 160px;
+    padding-left: 0;
   }
 }
 
@@ -425,6 +426,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   background: var(--utd-white);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#hero .social-links a i {
+  font-family: 'boxicons' !important;
 }
 
 #hero .social-links a:hover {
