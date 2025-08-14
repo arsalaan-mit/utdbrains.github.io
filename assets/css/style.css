@@ -352,6 +352,13 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+@media (min-width: 992px) {
+  #hero {
+    margin-left: 100px;
+    width: calc(100% - 100px);
+  }
+}
+
 #hero::before {
   content: "";
   position: absolute;
@@ -370,13 +377,12 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 2;
   text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-@media (min-width: 992px) {
-  #hero {
-    padding-left: 0;
-  }
-}
+
 
 #hero h1 {
   margin: 0;
