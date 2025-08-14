@@ -1,6 +1,6 @@
 /**
-* Template Name: UTD Brains - Custom Design
-* Updated: Custom design for UTD Brains AI/ML Research Group
+* Template Name: BRAINS@UTD - Custom Design
+* Updated: Custom design for BRAINS@UTD AI/ML Research Group
 * Colors: UTD Orange (#F17F29), White (#FFFFFF), Dark Gray (#2C3E50)
 */
 
@@ -1036,44 +1036,7 @@ section:nth-child(even) {
   font-size: 16px;
 }
 
-.hero-stats {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin: 40px 0;
-  flex-wrap: wrap;
-}
 
-.stat-item {
-  text-align: center;
-  background: var(--utd-white);
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  min-width: 120px;
-}
-
-.stat-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(241, 127, 41, 0.2);
-}
-
-.stat-number {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--utd-orange);
-  line-height: 1;
-}
-
-.stat-label {
-  display: block;
-  font-size: 0.9rem;
-  color: var(--utd-gray);
-  margin-top: 5px;
-  font-weight: 500;
-}
 
 /*--------------------------------------------------------------
 # Section Icons
@@ -1201,40 +1164,25 @@ section:nth-child(even) {
 /*--------------------------------------------------------------
 # Portfolio Enhancements
 --------------------------------------------------------------*/
-.portfolio-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(241, 127, 41, 0.9) 0%, rgba(212, 101, 31, 0.9) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: all 0.3s ease;
-  border-radius: 15px;
-}
-
-.portfolio-wrap:hover .portfolio-overlay {
-  opacity: 1;
-}
-
-.portfolio-info {
+.member-info {
   text-align: center;
-  color: var(--utd-white);
+  padding: 15px 0;
+  background: var(--utd-white);
+  border-radius: 0 0 15px 15px;
 }
 
-.portfolio-info h5 {
-  color: var(--utd-white);
+.member-info h5 {
+  color: var(--utd-gray);
   margin-bottom: 5px;
   font-size: 1.1rem;
+  font-weight: 600;
 }
 
-.portfolio-info h6 {
-  color: rgba(255, 255, 255, 0.9);
+.member-info h6 {
+  color: var(--utd-orange);
   font-size: 0.9rem;
   margin: 0;
+  font-weight: 500;
 }
 
 /*--------------------------------------------------------------
@@ -1330,19 +1278,6 @@ section:nth-child(even) {
 # Responsive Design Enhancements
 --------------------------------------------------------------*/
 @media (max-width: 768px) {
-  .hero-stats {
-    gap: 20px;
-  }
-  
-  .stat-item {
-    min-width: 100px;
-    padding: 15px;
-  }
-  
-  .stat-number {
-    font-size: 1.5rem;
-  }
-  
   .section-icon {
     width: 60px;
     height: 60px;
@@ -1356,17 +1291,5 @@ section:nth-child(even) {
   .recruitment-card,
   .sponsor-card {
     padding: 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  .hero-stats {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  .stat-item {
-    min-width: 150px;
   }
 }
